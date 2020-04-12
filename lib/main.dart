@@ -6,7 +6,6 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-  Constants constant = new Constants();
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Travel UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color(constant.primaryColor),
-        accentColor: Color(constant.accentColor),
-        scaffoldBackgroundColor: Color(constant.scaffoldBackgroundColor),
+        primaryColor: Color(Constants.primaryColor),
+        accentColor: Color(Constants.accentColor),
+        scaffoldBackgroundColor: Color(Constants.scaffoldBackgroundColor),
       ),
       home: HomeScreen(),
     );
